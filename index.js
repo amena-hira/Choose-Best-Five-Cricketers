@@ -41,6 +41,8 @@ document.getElementById('calc-player-budget').addEventListener('click',function 
     document.getElementById('player-expenses').innerText = totalPlayerExpenses;
     const managerField = document.getElementById('manager-input'); 
     const managerValue = parseInt(managerField.value);
+    const coachField = document.getElementById('coach-input'); 
+    const coachValue = parseInt(coachField.value);
     
     
 })
