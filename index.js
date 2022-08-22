@@ -1,0 +1,35 @@
+var listCount = 0;
+
+function listNameAdd(nameField) {
+    let nameValue = document.getElementById(nameField).innerText;
+    console.log(nameValue);
+    console.log(listCount);
+    if (listCount <5) {
+        let li = document.createElement('li');
+        li.innerText = nameValue;
+        document.getElementById("list").appendChild(li);
+        listCount++ ;
+    } else {
+        alert('Selected list More than 5 not allow');
+    } 
+    console.log(listCount);
+}
+
+document.getElementById("tamim").addEventListener('click', function(){
+    listNameAdd("tamim-name");
+}) 
+document.getElementById("sakib").addEventListener('click', function(){
+    listNameAdd("sakib-name");
+}) 
+document.getElementById("mushfiq").addEventListener('click', function(){
+    listNameAdd("mushfiq-name");
+}) 
+document.getElementById("sabbir").addEventListener('click', function(){
+    listNameAdd("sabbir-name");
+}) 
+document.getElementById("mustafiz").addEventListener('click', function(){
+    listNameAdd("mustafiz-name");
+}) 
+document.getElementById("ashraful").addEventListener('click', function(){
+    listNameAdd("ashraful-name");
+}) 
