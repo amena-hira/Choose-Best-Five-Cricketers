@@ -1,6 +1,6 @@
 var listCount = 0;
 
-function listNameAdd(nameField) {
+function listNameAdd(nameField,buttonField) {
     let nameValue = document.getElementById(nameField).innerText;
     console.log(nameValue);
     console.log(listCount);
@@ -8,6 +8,8 @@ function listNameAdd(nameField) {
         let li = document.createElement('li');
         li.innerText = nameValue;
         document.getElementById("list").appendChild(li);
+        const button = document.getElementById(buttonField);
+        button.setAttribute('disabled', '');
         listCount++ ;
     } else {
         alert('Selected list More than 5 not allow');
@@ -16,22 +18,22 @@ function listNameAdd(nameField) {
 }
 
 document.getElementById("tamim").addEventListener('click', function(){
-    listNameAdd("tamim-name");
+    listNameAdd("tamim-name","tamim");   
 }) 
 document.getElementById("sakib").addEventListener('click', function(){
-    listNameAdd("sakib-name");
+    listNameAdd("sakib-name","sakib");
 }) 
 document.getElementById("mushfiq").addEventListener('click', function(){
-    listNameAdd("mushfiq-name");
+    listNameAdd("mushfiq-name","mushfiq");
 }) 
 document.getElementById("sabbir").addEventListener('click', function(){
-    listNameAdd("sabbir-name");
+    listNameAdd("sabbir-name","sabbir");
 }) 
 document.getElementById("mustafiz").addEventListener('click', function(){
-    listNameAdd("mustafiz-name");
+    listNameAdd("mustafiz-name","mustafiz");
 }) 
 document.getElementById("ashraful").addEventListener('click', function(){
-    listNameAdd("ashraful-name");
+    listNameAdd("ashraful-name","ashraful");
 }) 
 
 document.getElementById('calc-player-budget').addEventListener('click',function () {
