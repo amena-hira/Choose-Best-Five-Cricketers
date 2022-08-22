@@ -1,0 +1,10 @@
+#bg-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
+    url(image/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+#bg-text{
+    padding-top: 10%;
+}
