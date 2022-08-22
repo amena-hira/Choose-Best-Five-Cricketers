@@ -39,10 +39,13 @@ document.getElementById('calc-player-budget').addEventListener('click',function 
     const perPlayerValue = parseInt(perPlayerField.value);
     let totalPlayerExpenses = listCount * perPlayerValue;
     document.getElementById('player-expenses').innerText = totalPlayerExpenses;
+})
+document.getElementById('calculate-total').addEventListener('click',function () {
+    let totalPlayerExpenses = parseInt(document.getElementById('player-expenses').innerText);
     const managerField = document.getElementById('manager-input'); 
     const managerValue = parseInt(managerField.value);
     const coachField = document.getElementById('coach-input'); 
     const coachValue = parseInt(coachField.value);
-    
-    
+    const totalBudget = totalPlayerExpenses + managerValue + coachValue;
+    document.getElementById('total-budget').innerText = totalBudget;
 })
