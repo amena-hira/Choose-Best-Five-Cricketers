@@ -39,5 +39,8 @@ document.getElementById('calc-player-budget').addEventListener('click',function 
     const perPlayerValue = parseInt(perPlayerField.value);
     let totalPlayerExpenses = listCount * perPlayerValue;
     document.getElementById('player-expenses').innerText = totalPlayerExpenses;
+    const managerField = document.getElementById('manager-input'); 
+    const managerValue = parseInt(managerField.value);
+    
     
 })
