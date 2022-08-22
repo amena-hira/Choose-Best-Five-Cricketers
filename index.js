@@ -12,7 +12,7 @@ function listNameAdd(nameField,buttonField) {
         button.setAttribute('disabled', '');
         listCount++ ;
     } else {
-        alert('Selected list More than 5 not allow');
+        alert('You added 5 players. Now you can not add player');
     } 
     console.log(listCount);
 }
