@@ -33,3 +33,11 @@ document.getElementById("mustafiz").addEventListener('click', function(){
 document.getElementById("ashraful").addEventListener('click', function(){
     listNameAdd("ashraful-name");
 }) 
+
+document.getElementById('calc-player-budget').addEventListener('click',function () {
+    const perPlayerField = document.getElementById('player-budget');
+    const perPlayerValue = parseInt(perPlayerField.value);
+    let totalPlayerExpenses = listCount * perPlayerValue;
+    document.getElementById('player-expenses').innerText = totalPlayerExpenses;
+    
+})
